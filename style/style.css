@@ -1,0 +1,95 @@
+header {
+  width: 100%;
+  height: 22rem;
+  background: #282D33;
+  color: #CC7E62;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.contenedor .contenedor-textos-header {
+  text-align: center;
+  height: 150px;
+  margin-top: 40px;
+}
+.contenedor .contenedor-textos-header .titulo-nombre-header {
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.contenedor .contenedor-textos-header .contenedor-descrip-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor .contenedor-textos-header .carrera-header {
+  padding: 0 7px;
+  color: rgb(255, 251, 251);
+  font-size: 20px;
+}
+.contenedor .contenedor-textos-header .linea-izquierda-header, .contenedor .contenedor-textos-header .linea-derecha-header {
+  width: 3%;
+  height: 1px;
+  margin-top: 14px;
+  background: #DBDCDE;
+}
+
+.iconos-contacto-header {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: right;
+  font-size: 12px;
+}
+.iconos-contacto-header .iconos-contacto-izquierda, .iconos-contacto-header .iconos-contacto-derecha {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+.iconos-contacto-header .direccion-contacto-header {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 15px;
+}
+.iconos-contacto-header .telefono-contacto-header {
+  display: flex;
+  justify-content: space-around;
+}
+.iconos-contacto-header .foto-contacto-header {
+  width: 170px;
+}
+.iconos-contacto-header .email-contacto-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.iconos-contacto-header .github-contacto-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background: rgb(255, 251, 251);
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */

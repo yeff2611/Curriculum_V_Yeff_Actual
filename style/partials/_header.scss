@@ -1,0 +1,76 @@
+header{
+    width: 100%;
+    height: 22rem;
+    background: $secondary-color;
+    color: $third-color;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    .contenedor-textos-header{
+        text-align: center;
+        height: 150px;
+        margin-top: 40px;
+        .titulo-nombre-header{        
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+        .contenedor-descrip-header{
+            width: 100%;
+            height: 40px;    
+            display: flex;    
+            justify-content: center;       
+            // background-color: $primary-color;
+
+        }
+        .carrera-header{
+            padding: 0 7px;
+            color: $bg-color-body;
+            font-size: 20px;
+        }
+        .linea-izquierda-header, .linea-derecha-header{
+            width: 3%;
+            height: 1px;
+            margin-top: 14px;
+            background: $primary-color;
+        }
+    }
+
+}
+.iconos-contacto-header{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+    font-size: 12px;
+    .iconos-contacto-izquierda, .iconos-contacto-derecha{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .direccion-contacto-header{
+        display: flex;
+        justify-content: space-around;  
+        padding-left: 15px;          
+    }
+    .telefono-contacto-header{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .foto-contacto-header{
+        width: 170px;
+    }
+    .email-contacto-header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;        
+    }
+    .github-contacto-header{
+        display: flex;
+        justify-content: space-around;
+    }
+}
