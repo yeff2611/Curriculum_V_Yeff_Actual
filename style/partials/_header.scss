@@ -1,3 +1,7 @@
+%flex-around{
+    display: flex;
+    justify-content: space-around;
+}
 header{
     width: 100%;
     height: 22rem;
@@ -22,8 +26,6 @@ header{
             height: 40px;    
             display: flex;    
             justify-content: center;       
-            // background-color: $primary-color;
-
         }
         .carrera-header{
             padding: 0 7px;
@@ -45,15 +47,14 @@ header{
     text-align: right;
     font-size: 12px;
     .iconos-contacto-izquierda, .iconos-contacto-derecha{
-        width: 150px;
+        width: 170px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
     }
     .direccion-contacto-header{
-        display: flex;
-        justify-content: space-around;  
+        @extend %flex-around;
         padding-left: 15px;          
     }
     .telefono-contacto-header{
@@ -65,12 +66,23 @@ header{
         width: 170px;
     }
     .email-contacto-header{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;        
+        @extend %flex-around;
+        flex-direction: row-reverse;             
     }
     .github-contacto-header{
-        display: flex;
-        justify-content: space-around;
+        @extend %flex-around;
     }
+}
+.iconos-contacto-derecha{
+    right: 80px;
+    .descripcion-contacto{
+        position: relative;
+        right: 50px;
+        p{
+            width: 30px;
+        }
+    }
+}
+.iconos-contacto-izquierda{
+    left: 50px;
 }
