@@ -1,9 +1,66 @@
 main{
     margin-top: 50px;
-    .contenedor-texto-perfil{
-        .titulo-perfil{
-            text-align: center;
-            color: $third-color;
-        }
+    .titulo{
+        text-align: center;
+        color: $third-color;
+        font-size: 23px;
+    }
+    .parrafo-perfil{
+        line-height: 30px;
+        margin: 15px 0;
+        text-align: justify;
     }
 }
+.titulo{
+    &::after{
+        content: " //";
+        color: $secondary-color;
+    }&::before{
+        content: "// ";
+        color: $secondary-color;
+    }
+}
+.contenedor-texto-experiencia{
+    display: flex;
+    flex-wrap: wrap;  
+    margin-top: 30px;      
+    h3{
+        text-align: right;
+        color: $secondary-color;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }  
+    .experiencia{        
+        width: 50%;
+        font-size: 15px;        
+        line-height: 1.5rem;
+        margin-bottom: 15px;  
+        .info-compania{
+            display: flex;                        
+            position: relative;
+            width: 28rem;
+        }
+        .derecha{
+            left: 55px;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+        .izquierda{
+            text-align: left;
+            justify-content: flex-start;
+            padding-left: 30px;
+        }
+        .funciones{
+            text-align: justify;            
+        }
+    }
+
+}
+.info-compania{
+    p{
+        padding: 5px 5px;
+    } & ::after{
+        content: " / ";
+    }   
+}
+

@@ -64,7 +64,18 @@ header {
   justify-content: space-around;
 }
 .iconos-contacto-header .foto-contacto-header {
-  width: 170px;
+  width: 210px;
+  height: 210px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.iconos-contacto-header .foto-contacto-header .foto {
+  display: inline-block;
+  position: relative;
+  width: 190px;
+  border-radius: 50%;
+  right: 10px;
+  top: 10px;
 }
 .iconos-contacto-header .email-contacto-header {
   flex-direction: row-reverse;
@@ -108,7 +119,65 @@ body {
 main {
   margin-top: 50px;
 }
-main .contenedor-texto-perfil .titulo-perfil {
+main .titulo {
   text-align: center;
   color: #CC7E62;
+  font-size: 23px;
+}
+main .parrafo-perfil {
+  line-height: 30px;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.titulo::after {
+  content: " //";
+  color: #282D33;
+}
+.titulo::before {
+  content: "// ";
+  color: #282D33;
+}
+
+.contenedor-texto-experiencia {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.contenedor-texto-experiencia h3 {
+  text-align: right;
+  color: #282D33;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.contenedor-texto-experiencia .experiencia {
+  width: 50%;
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+.contenedor-texto-experiencia .experiencia .info-compania {
+  display: flex;
+  position: relative;
+  width: 28rem;
+}
+.contenedor-texto-experiencia .experiencia .derecha {
+  left: 55px;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.contenedor-texto-experiencia .experiencia .izquierda {
+  text-align: left;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.contenedor-texto-experiencia .experiencia .funciones {
+  text-align: justify;
+}
+
+.info-compania p {
+  padding: 5px 5px;
+}
+.info-compania ::after {
+  content: " / ";
 }/*# sourceMappingURL=style.css.map */

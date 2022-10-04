@@ -63,7 +63,19 @@ header{
         
     }
     .foto-contacto-header{
-        width: 170px;
+        width: 210px;
+        height: 210px;       
+        background-color: gray;
+        border-radius: 50%;
+        .foto{
+            display: inline-block;
+            position: relative;
+            width: 190px;
+            border-radius: 50%;
+            right: 10px;
+            top: 10px;
+            // text-align: center
+        }
     }
     .email-contacto-header{
         @extend %flex-around;
