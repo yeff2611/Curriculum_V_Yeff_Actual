@@ -76,11 +76,12 @@ header {
   right: 10px;
   top: 10px;
   filter: grayscale(80%);
-  transition: all 1.5s;
+  transition: width 1s;
 }
 .iconos-contacto-header .foto-contacto-header .foto:hover {
   filter: grayscale(0%);
-  transition: all 1.5s;
+  width: 218px;
+  transition: width 0.8s;
 }
 .iconos-contacto-header .email-contacto-header {
   flex-direction: row-reverse;
@@ -96,6 +97,10 @@ header {
   box-shadow: 2px 2px 10px 2px #282D33;
 }
 
+.icon-direccion {
+  padding: 0 50px 0 15px;
+}
+
 .iconos-contacto-izquierda {
   left: 50px;
 }
@@ -106,6 +111,7 @@ header {
 .iconos-contacto-derecha .descripcion-contacto {
   position: relative;
   right: 50px;
+  font-size: 14px;
 }
 .iconos-contacto-derecha .descripcion-contacto p {
   width: 20px;
@@ -113,6 +119,10 @@ header {
 .iconos-contacto-derecha .descripcion-contacto a {
   text-decoration: none;
   color: #DBDCDE;
+}
+
+.direccion {
+  width: 150px;
 }
 
 * {
@@ -210,8 +220,16 @@ main .parrafo-perfil {
 .contenedor-info-profesional {
   display: flex;
   justify-content: space-evenly;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
   position: relative;
+}
+.contenedor-info-profesional .educacion {
+  position: relative;
+  left: 55px;
+}
+.contenedor-info-profesional .habilidades {
+  position: relative;
+  left: 60px;
 }
 .contenedor-info-profesional h2 {
   margin-bottom: 10px;
@@ -263,6 +281,8 @@ main .parrafo-perfil {
   height: 280px;
   width: 0.5px;
   background: #282D33;
+  position: relative;
+  left: 25px;
 }
 
 .titulo-referencia {

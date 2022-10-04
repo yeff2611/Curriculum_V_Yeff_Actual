@@ -56,7 +56,6 @@ main{
             text-align: justify;            
         }
     }
-
 }
 .info-compania{    
     p{
@@ -69,11 +68,18 @@ main{
 .contenedor-info-profesional{
     display: flex;
     justify-content: space-evenly;  
-    letter-spacing: 2px;  
+    letter-spacing: 3.5px;  
     position: relative;
+    .educacion{
+        position: relative;
+        left: 55px;
+    }
+    .habilidades{
+        position: relative;
+        left: 60px;
+    }
     h2{
         margin-bottom: 10px;
-        // text-align: center;
         color: $third-color;
     }
     .titulo-educacion{
@@ -125,6 +131,8 @@ main{
 .linea-vertical{
     height: 280px;
     width: 0.5px;background: $secondary-color;
+    position: relative;
+    left: 25px;
 }
 .titulo-referencia{
     text-align: center;

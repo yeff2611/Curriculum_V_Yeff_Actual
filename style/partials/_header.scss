@@ -72,14 +72,15 @@ header{
             box-shadow: 1px 1px 15px 1px $shadow-color;
             width: 210px;
             border-radius: 50%;
-            // border: 1px solid #A6A6A6;
             right: 10px;
             top: 10px;            
             filter: grayscale(80%);  
-            transition: all 1.5s;
+            transition: width 1s;
             &:hover{
                 filter: grayscale(0%);
-                transition: all 1.5s;
+                width: 218px;
+                transition: width 0.8s;
+                
             }
         }
     }
@@ -101,6 +102,9 @@ header{
         box-shadow: 2px 2px 10px 2px $secondary-color;
     }
 }
+.icon-direccion{
+    padding: 0 50px 0 15px;
+}
 .iconos-contacto-izquierda{
     left: 50px;
 }
@@ -108,7 +112,8 @@ header{
     right: 80px;
     .descripcion-contacto{
         position: relative;
-        right: 50px;        
+        right: 50px;    
+        font-size: 14px;  
         p{
             width: 20px;            
         }
@@ -117,4 +122,7 @@ header{
             color: $primary-color;
         }
     }
+}
+.direccion{
+    width: 150px;
 }
