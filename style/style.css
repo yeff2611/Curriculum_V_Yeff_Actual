@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 .iconos-contacto-header .github-contacto-header, .iconos-contacto-header .email-contacto-header, .iconos-contacto-header .direccion-contacto-header {
   display: flex;
   justify-content: space-around;
@@ -19,6 +20,7 @@ header {
 .contenedor .contenedor-textos-header .titulo-nombre-header {
   font-size: 45px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .contenedor .contenedor-textos-header .contenedor-descrip-header {
   width: 100%;
@@ -43,6 +45,7 @@ header {
   justify-content: space-evenly;
   text-align: right;
   font-size: 12px;
+  color: #DBDCDE;
 }
 .iconos-contacto-header .iconos-contacto-izquierda, .iconos-contacto-header .iconos-contacto-derecha {
   width: 170px;
@@ -51,6 +54,7 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
+  bottom: 15px;
 }
 .iconos-contacto-header .direccion-contacto-header {
   padding-left: 15px;
@@ -66,21 +70,49 @@ header {
 .iconos-contacto-header .foto-contacto-header .foto {
   display: inline-block;
   position: relative;
-  box-shadow: 2px 2px 15px 2px #A6A6A6;
+  box-shadow: 1px 1px 15px 1px #A6A6A6;
   width: 210px;
   border-radius: 50%;
   right: 10px;
   top: 10px;
+  filter: grayscale(80%);
+  transition: all 1.5s;
+}
+.iconos-contacto-header .foto-contacto-header .foto:hover {
+  filter: grayscale(0%);
+  transition: all 1.5s;
 }
 .iconos-contacto-header .email-contacto-header {
   flex-direction: row-reverse;
+}
+.iconos-header {
+  font-size: 27px;
+  color: #CC7E62;
+  opacity: 0.8;
+}
+.iconos-header:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px #282D33;
+}
+
+.iconos-contacto-izquierda {
+  left: 50px;
+}
+
+.iconos-contacto-derecha {
+  right: 80px;
 }
 .iconos-contacto-derecha .descripcion-contacto {
   position: relative;
   right: 50px;
 }
 .iconos-contacto-derecha .descripcion-contacto p {
-  width: 30px;
+  width: 20px;
+}
+.iconos-contacto-derecha .descripcion-contacto a {
+  text-decoration: none;
+  color: #DBDCDE;
 }
 
 * {
@@ -92,7 +124,7 @@ header {
 body {
   width: 80%;
   margin: auto;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   background: rgb(255, 251, 251);
   box-shadow: 3px 3px 25px 3px #282D33;
@@ -113,6 +145,7 @@ main .titulo {
   text-align: center;
   color: #CC7E62;
   font-size: 23px;
+  letter-spacing: 2px;
 }
 main .parrafo-perfil {
   line-height: 30px;
@@ -178,6 +211,7 @@ main .parrafo-perfil {
   display: flex;
   justify-content: space-evenly;
   letter-spacing: 2px;
+  position: relative;
 }
 .contenedor-info-profesional h2 {
   margin-bottom: 10px;
@@ -194,6 +228,9 @@ main .parrafo-perfil {
 .contenedor-info-profesional .titulo-skills::before {
   content: "// ";
   color: #282D33;
+}
+.contenedor-info-profesional ul {
+  max-width: 15rem;
 }
 .contenedor-info-profesional ul li {
   list-style: none;
@@ -228,6 +265,18 @@ main .parrafo-perfil {
   background: #282D33;
 }
 
-.info-profesional .contenedor {
-  margin-left: 120px;
+.titulo-referencia {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-right: 40px;
+}
+
+.contenedor-referencias {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 28px;
+}
+.contenedor-referencias .referencia {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

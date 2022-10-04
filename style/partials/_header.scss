@@ -17,6 +17,7 @@ header{
         .titulo-nombre-header{        
             font-size: 45px;
             letter-spacing: 5px;
+            text-transform: uppercase;
         }
         .contenedor-descrip-header{
             width: 100%;
@@ -43,6 +44,7 @@ header{
     justify-content: space-evenly;
     text-align: right;
     font-size: 12px;    
+    color: $primary-color;
     .iconos-contacto-izquierda, .iconos-contacto-derecha{
         width: 170px;
         height: 180px;
@@ -50,10 +52,11 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
+        bottom: 15px;        
     }
     .direccion-contacto-header{
         @extend %flex-around;
-        padding-left: 15px;          
+        padding-left: 15px; 
     }
     .telefono-contacto-header{
         display: flex;
@@ -62,15 +65,22 @@ header{
     }
     .foto-contacto-header{
         width: 190px;
-        height: 250px;   
+        height: 250px;         
         .foto{
             display: inline-block;
             position: relative;
-            box-shadow: 2px 2px 15px 2px #A6A6A6;
+            box-shadow: 1px 1px 15px 1px $shadow-color;
             width: 210px;
             border-radius: 50%;
+            // border: 1px solid #A6A6A6;
             right: 10px;
             top: 10px;            
+            filter: grayscale(80%);  
+            transition: all 1.5s;
+            &:hover{
+                filter: grayscale(0%);
+                transition: all 1.5s;
+            }
         }
     }
     .email-contacto-header{
@@ -78,15 +88,33 @@ header{
         flex-direction: row-reverse;             
     }
     .github-contacto-header{
-        @extend %flex-around;
+        @extend %flex-around;        
     }
 }
-.iconos-contacto-derecha{
+.iconos-header{
+    font-size: 27px;     
+    color: $third-color;
+    opacity: 0.8;    
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px 2px $secondary-color;
+    }
+}
+.iconos-contacto-izquierda{
+    left: 50px;
+}
+.iconos-contacto-derecha{    
+    right: 80px;
     .descripcion-contacto{
         position: relative;
-        right: 50px;
+        right: 50px;        
         p{
-            width: 30px;
+            width: 20px;            
+        }
+        a{
+            text-decoration: none;
+            color: $primary-color;
         }
     }
 }
