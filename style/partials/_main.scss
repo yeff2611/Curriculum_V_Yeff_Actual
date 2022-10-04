@@ -1,5 +1,5 @@
 main{
-    margin-top: 50px;
+    margin-top: 95px;    
     .titulo{
         text-align: center;
         color: $third-color;
@@ -38,12 +38,13 @@ main{
         .info-compania{
             display: flex;                        
             position: relative;
-            width: 28rem;
+            width: 28rem;            
         }
         .derecha{
             left: 55px;
             justify-content: flex-end;
             padding-right: 30px;
+            left: 80px;
         }
         .izquierda{
             text-align: left;
@@ -56,11 +57,74 @@ main{
     }
 
 }
-.info-compania{
+.info-compania{    
     p{
         padding: 5px 5px;
     } & ::after{
         content: " / ";
-    }   
+        color: $secondary-color;
+    } 
 }
-
+.contenedor-info-profesional{
+    display: flex;
+    justify-content: space-evenly;  
+    letter-spacing: 2px;  
+    h2{
+        margin-bottom: 10px;
+        // text-align: center;
+        color: $third-color;
+    }
+    .titulo-educacion{
+        text-align: right;
+        margin-bottom: 20px;
+        &::after{
+            content: " //";
+            color: $secondary-color;
+        }
+    }
+    .titulo-skills{
+        &::before{
+            content: "// ";
+            color: $secondary-color;
+        }
+    }
+    ul{
+        li{
+            list-style: none;
+            line-height: 35px;
+        }
+    }
+}
+.info-educacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-bottom: 15px;    
+    .descripcion-educacion{
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+        p{
+            padding: 2px;
+        }
+    }
+}
+.info-educacion{
+    p{
+        &::after{
+            content: " /";
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+}
+.linea-vertical{
+    height: 280px;
+    width: 0.5px;background: $secondary-color;
+}
+.info-profesional{
+    .contenedor{
+        margin-left: 120px;
+    }
+}
