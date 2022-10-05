@@ -37,9 +37,8 @@ main{
         line-height: 1.5rem;
         margin-bottom: 15px;  
         .info-compania{
-            display: flex;                        
-            position: relative;
-            width: 28rem;            
+            display: flex;     
+            width: 100%;                  
         }
         .funciones{
             text-align: justify;         
@@ -56,7 +55,6 @@ main{
             justify-content: flex-start;
             padding-left: 30px;
         }
-
     }
 }
 .info-compania{    
@@ -69,16 +67,15 @@ main{
 }
 .contenedor-info-profesional{
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: center;  
     letter-spacing: 3.5px;  
-    position: relative;
+    // position: relative;
     .educacion{
-        position: relative;
-        left: 55px;
+        margin-left: 40px;
+        margin-right: 20px;
     }
     .habilidades{
-        position: relative;
-        left: 60px;
+        margin-left: 30px;
     }
     h2{
         margin-bottom: 10px;
@@ -99,8 +96,6 @@ main{
         }
     }
     .software{
-        position: relative;
-        top: 5px;
         .titulo-software{
             font-size: 20px;
         }
@@ -139,21 +134,16 @@ main{
 }
 .linea-vertical{
     height: 280px;
-    width: 0.5px;background: $secondary-color;
-    position: relative;
-    left: 25px;
+    width: 0.5px;
+    margin: 0 20px 0 20px;
 }
 .titulo-referencia{
     text-align: center;
-    margin-bottom: 30px;
-    padding-right: 40px;
+    margin-bottom: 30px;    
 }
-
 .contenedor-referencias{
     display: flex;
     justify-content: space-around;
-    position: relative;
-    left: 28px;
     .referencia{
         text-align: center;        
     }
