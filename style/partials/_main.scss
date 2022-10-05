@@ -41,20 +41,22 @@ main{
             position: relative;
             width: 28rem;            
         }
+        .funciones{
+            text-align: justify;         
+        }
         .derecha{
             left: 55px;
             justify-content: flex-end;
             padding-right: 30px;
             left: 80px;
+            text-align-last: right;
         }
         .izquierda{
-            text-align: left;
+            text-align-last: left;
             justify-content: flex-start;
             padding-left: 30px;
         }
-        .funciones{
-            text-align: justify;            
-        }
+
     }
 }
 .info-compania{    
@@ -94,6 +96,13 @@ main{
         &::before{
             content: "// ";
             color: $secondary-color;
+        }
+    }
+    .software{
+        position: relative;
+        top: 5px;
+        .titulo-software{
+            font-size: 20px;
         }
     }
     ul{

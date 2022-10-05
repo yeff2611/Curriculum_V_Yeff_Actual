@@ -194,19 +194,22 @@ main .parrafo-perfil {
   position: relative;
   width: 28rem;
 }
+.contenedor-texto-experiencia .experiencia .funciones {
+  text-align: justify;
+}
 .contenedor-texto-experiencia .experiencia .derecha {
   left: 55px;
   justify-content: flex-end;
   padding-right: 30px;
   left: 80px;
+  -moz-text-align-last: right;
+       text-align-last: right;
 }
 .contenedor-texto-experiencia .experiencia .izquierda {
-  text-align: left;
+  -moz-text-align-last: left;
+       text-align-last: left;
   justify-content: flex-start;
   padding-left: 30px;
-}
-.contenedor-texto-experiencia .experiencia .funciones {
-  text-align: justify;
 }
 
 .info-compania p {
@@ -246,6 +249,13 @@ main .parrafo-perfil {
 .contenedor-info-profesional .titulo-skills::before {
   content: "// ";
   color: #282D33;
+}
+.contenedor-info-profesional .software {
+  position: relative;
+  top: 5px;
+}
+.contenedor-info-profesional .software .titulo-software {
+  font-size: 20px;
 }
 .contenedor-info-profesional ul {
   max-width: 15rem;
