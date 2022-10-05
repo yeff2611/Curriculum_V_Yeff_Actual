@@ -45,7 +45,7 @@ header{
     text-align: right;
     font-size: 12px;    
     color: $primary-color;
-    margin-right: 80px;
+    margin-right: 95px;
     .iconos-contacto-izquierda, .iconos-contacto-derecha{
         width: 170px;
         height: 180px;
@@ -83,12 +83,11 @@ header{
     .foto{
         &:hover{
             filter: grayscale(0%);
-            width: 218px;
+            width: 225px;
             transition: width 0.8s;
         }
     }
 }
-
 .iconos-contacto-header{
     .iconos-contacto-derecha{    
         width: 80px;
