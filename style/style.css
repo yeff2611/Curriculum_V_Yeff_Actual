@@ -292,4 +292,57 @@ main .parrafo-perfil {
 }
 .contenedor-referencias .referencia {
   text-align: center;
+}
+
+.contenedor-proyectos {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template: 1fr 1fr/repeat(3, 1fr);
+  margin-top: 20PX;
+  gap: 10px 10px;
+}
+
+.proyecto {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.75;
+}
+.proyecto:hover {
+  opacity: 1;
+  color: #282D33;
+  transition: all 1s;
+}
+.proyecto .titulo-proyecto {
+  background-color: #282D33;
+  opacity: 0.8;
+  color: #CC7E62;
+  margin-top: 130px;
+  font-size: 25px;
+}
+
+.proyecto1 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/1.jpg");
+}
+
+.proyecto2 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/2.jpg");
+}
+
+.proyecto3 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/3.jpg");
+}
+
+.proyecto4 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/4.jpg");
+}
+
+.proyecto5 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/5.jpg");
+}
+
+.proyecto6 {
+  background-image: url("/Curriculum_V_Yeff_Actual/assets/img/6.jpg");
 }/*# sourceMappingURL=style.css.map */
